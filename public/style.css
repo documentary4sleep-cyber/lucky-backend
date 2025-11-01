@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fffde7, #fff3e0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 420px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+header h1 {
+  margin-bottom: 5px;
+  color: #ff9800;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-btn { background-color: #ffca28; color: #333; }
+.primary-btn:hover { background-color: #ffb300; }
+
+.secondary-btn { background-color: #80cbc4; color: #222; }
+.secondary-btn:hover { background-color: #4db6ac; }
+
+.accent-btn { background-color: #ce93d8; color: #222; }
+.accent-btn:hover { background-color: #ba68c8; }
+
+.hidden { display: none; }
+
+.result-box {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+  animation: fadeIn 0.7s ease;
+}
+
+.result-text {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

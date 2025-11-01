@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍀 حظي اليوم</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🍀 حظي اليوم</h1>
+      <p class="subtitle">اكتشف حظك وتوقعات برجك اليومية!</p>
+    </header>
+
+    <main>
+      <section id="register-section">
+        <p>🎂 أدخل تاريخ ميلادك لتبدأ</p>
+        <input type="date" id="birthDate" />
+        <button id="registerBtn" class="primary-btn">ابدأ</button>
+      </section>
+
+      <section id="main-section" class="hidden">
+        <p id="luckText"></p>
+        <div id="luckResult" class="result-box hidden"></div>
+
+        <button id="luckBtn" class="primary-btn">اعرف حظك اليوم 🍀</button>
+        <button id="shareBtn" class="secondary-btn">شارِك التطبيق 📤</button>
+        <button id="horoscopeBtn" class="accent-btn">توقعات برجي 🔮</button>
+
+        <div id="resultText" class="result-text"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 تطبيق <strong>حظي اليوم</strong> | كل الحقوق محفوظة</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC3c_JfQKpyGoggR7PlnrPbO0tCanPRgm0",
+    authDomain: "lucky-app-4cda3.firebaseapp.com",
+    projectId: "lucky-app-4cda3",
+    storageBucket: "lucky-app-4cda3.firebasestorage.app",
+    messagingSenderId: "477339306070",
+    appId: "1:477339306070:web:95ba3dd9d8d7619b0193f7",
+    measurementId: "G-CRP989VNNB"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "lucky-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seedHoroscopes.js"
+  }
+}
