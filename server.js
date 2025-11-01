@@ -152,4 +152,10 @@ app.get("/api/horoscope/:userId", async (req, res) => {
 
 // ====== تشغيل السيرفر ======
 const PORT = process.env.PORT || 5000;
+// ====== مسار اختبار الاتصال ======
+app.get("/api", (req, res) => {
+  res.send("✅ Lucky API is running!");
+});
+
+
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

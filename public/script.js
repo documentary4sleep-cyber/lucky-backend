@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://lucky-backend-29ha.onrender.com/api";
 let userId = localStorage.getItem("userId");
 
 const registerSection = document.getElementById("register-section");
